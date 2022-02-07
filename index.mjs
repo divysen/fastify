@@ -7,7 +7,7 @@ const fastify = Fastify({ logger: true });
 fastify.register(PublicRoutes, { prefix: '/' });
 fastify.register(AdminRoutes, { prefix: '/admin' });
 
-fastify.listen(80, function (err, address) {
+fastify.listen(2100, function (err, address) {
     if (err) {
         fastify.log.error(err);
         process.exit(1);
